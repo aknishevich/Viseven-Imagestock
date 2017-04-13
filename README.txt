@@ -1,0 +1,3 @@
+﻿My client wanted a image stock application only on HTML 5, CSS 3 and JavaScript, without database and server. With the function of adding new pictures, сhanges in the number of likes and dislikes, and adding new comments.
+
+Моему заказчику нужно было веб-приложение, которое работало бы без базы данных и серверной части, только на стороне клиента. Была поставлена задача реализовать добавление новых фотографий, отслеживание количества лайков-дизлайков на каждой из них, а так же комментарии, которые можно добавлять и чтобы их количество так же изменялось.

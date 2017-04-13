@@ -1,0 +1,44 @@
+<!--Created by Alexander Knishevich
+    My contacts:
+        VK: https://vk.com/aknishevich
+        E-mail: aknishevich@gmail.com
+        Upwork-Profile: https://www.upwork.com/freelancers/~016171e34f311aeb56
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viseven Imagestock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="http://allfont.ru/allfont.css?fonts=open-sans-bold" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="container" class="container">
+        <span>WELCOME TO VISEVEN <mark class="name">IMAGESTOCK</mark></span>
+        <div class="container2">
+        </div>
+    </div>
+    <div class="zoom_bg" style="visibility: hidden">
+        <div class="photo">
+            <div class="close"></div>
+            <div class="boxphoto">
+                <img src="images/img1.jpg" width="450px;" height="575px;">
+                <div class="zoom_info">
+                    <div class="zoom_info_bg"></div>
+                    <div class="likes likez" onclick="likeclick()"><p>0</p></div>
+                    <div class="likes dislikez" onclick="dislikeclick()"><p>0</p></div>
+                </div>
+            </div>
+         <div class="boxcomments">
+            <p class="count"></p>
+            <div id="comments"></div>
+            <input type="text" id="author" placeholder="Type your nickname here...">
+            <div class="send"><textarea  id="comment" placeholder="Write your comment here..."></textarea><div class="sndbtn" onclick="sendComment()"></div></div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</div>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

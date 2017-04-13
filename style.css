@@ -1,0 +1,329 @@
+/*      Created by Alexander Knishevich
+//      My contacts:
+//              VK: https://vk.com/aknishevich
+//              E-mail: aknishevich@gmail.com
+//              Upwork-Profile: https://www.upwork.com/freelancers/~016171e34f311aeb56
+*/
+body{
+    background: #f0f3f6;
+}
+span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    color: #8499a7;
+    margin-left: 25px;
+}
+.name{
+    background-color: inherit;
+    color: #4ec0cd;
+}
+#container{
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+    background: #f0f3f6;
+}
+.container2{
+    margin: 0 auto;
+    margin-left: 15px;
+    width: 1024px;
+    height: 768px;
+    display: inline-table;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.container2>div{
+    position: relative;
+    width: 236px;
+    height: 200px;
+    color: white;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+.container2>div:hover{
+    cursor: pointer;
+}
+.photo_info{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    opacity: 0.8;
+    background-color: white;
+    z-index: 100;
+}
+.zoom_bg{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.photo{
+    position: relative;
+    width: 810px;
+    height: 595px;
+    margin: 0 auto;
+    margin-top: 20px;
+    opacity: 1;
+    z-index: 100;
+    background-color: white;
+}
+.boxphoto{
+    position: relative;
+    display: inline-block;
+    top: 0px;
+}
+.boxcomments{
+    position: relative;
+    display: inline-block;
+    width: 313px;
+    height: 540px;
+    top: 0px;
+    background-color: white;
+    margin-left: 32px;
+}
+.boxcomments p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #8499a7;
+}
+.dislikez{
+    position: relative;
+    background-image: url("images/dislike_normal.png");
+    bottom: -100px;
+}
+.likez{
+    background-image: url("images/like_normal.png");
+}
+.icon p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    position: absolute;
+    color: #48949d;
+    right: 6px;
+    bottom: 4px;
+}
+.likes{
+    position: relative;
+    float: right;
+    margin-right: 6px;
+    bottom: 7px;
+    width: 65px;
+    height: 60px;
+}
+.likes:hover{
+    cursor: pointer;
+}
+.likes p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #48949d;
+    font-size: 11px;
+
+}
+.likez p{
+    position: relative;
+    width: 10px;
+    left: 44px;
+    top: 3px;
+}
+.dislikez p{
+    position: relative;
+    width: 10px;
+    left: 40px;
+    top: 3px;
+}
+.zoom_info{
+    position: absolute;
+    bottom: 5px;
+    width: 450px;
+    height: 60px;
+}
+.zoom_info_bg{
+    position: absolute;
+    bottom: -1px;
+    width: 450px;
+    height: 60px;
+    background-color: white;
+    opacity: 0.8;
+}
+.bg{
+    position: fixed;
+    background: #f0f3f6;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    z-index: 10;
+}
+.close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 10px;
+    background-image: url("images/close.png");
+    z-index: 100;
+}
+.close:hover{
+    cursor: pointer;
+}
+.icon{
+    position: relative;
+    border: 1px solid;
+    border-color: white;
+    margin: 10px;
+    width: 35px;
+    height: 30px;
+}
+.com{
+    float: left;
+    background-image: url("images/comments.png");
+}
+.dis{
+    float: right;
+    background-image: url("images/dislike.png");
+}
+.like{
+    float: right;
+    background-image: url("images/like.png");
+}
+.add_image{
+    width: 75px;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #a0b0ba;
+}
+#add{
+    background-color: white;
+}
+#add:hover{
+    cursor: inherit;
+}
+.add_image label:hover{
+    cursor: pointer;
+    color: #8499a7;
+}
+.add_image p{
+    margin-top: 0px;
+    margin-left: -10px;
+}
+.add_image p:nth-last-child(1){
+    margin-top: -15px;
+    margin-left: 0px;
+}
+input[type="file"]{
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    background-image: url("images/add.png");
+}
+.hide{
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+.comm{
+    position: relative;
+    margin-top: 22px;
+    padding-left: 11px;
+    white-space: normal;
+    width: 286px;
+    border: 2px solid;
+    border-color: #f0f3f6;
+}
+.comm p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #607583;
+}
+.author p{
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: #95a7b3;
+}
+.date p{
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: #95a7b3;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #21b8c6;
+}
+#comments{
+    position: relative;
+    top: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 415px;
+    max-height: 415px;
+    border-bottom: 2px solid;
+    border-color: #d1dae3;
+}
+#author{
+    border: none;
+    border-bottom: 2px solid;
+    border-color: #f0f3f6;
+    padding-left: 10px;
+}
+.boxcomments input{
+    width: 275px;
+    font-size: 14px;
+    position: relative;
+    margin-top: 15px;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+.send{
+    width: 290px;
+    height: 50px;
+    margin-top: 10px;
+}
+textarea{
+    height: 44px;
+    width: 230px;
+    border-color: #f0f3f6;
+    resize: none;
+}
+.sndbtn{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("images/sendbtn.png");
+}
+.sndbtn:hover{
+    cursor: pointer;
+}
